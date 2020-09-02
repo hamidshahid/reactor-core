@@ -49,7 +49,11 @@ import static reactor.util.retry.RetrySpec.*;
  */
 public abstract class Retry {
 
-	private final ContextView retryContext;
+	public final ContextView retryContext;
+
+	public Retry() {
+		this(Context.empty());
+	}
 
 	protected Retry(ContextView retryContext) {
 		this.retryContext = retryContext;
