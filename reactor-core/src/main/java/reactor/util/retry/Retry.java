@@ -116,7 +116,7 @@ public abstract class Retry {
 
 		/**
 		 * Return a read-only view of the user provided context, which may be used to store
-		 * objects to be reset/rollbacked before a retry.
+		 * objects to be reset/rollbacked or otherwise mutated before or after a retry.
 		 *
 		 * @return a read-only view of a user provided context.
 		 */
